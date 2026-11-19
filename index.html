@@ -59,7 +59,7 @@
   .screen {
     position: fixed; inset: 0; z-index: 1;
     display: none; flex-direction: column; align-items: center;
-    padding: max(12px, env(safe-area-inset-top)) 16px max(12px, env(safe-area-inset-bottom));
+    padding: max(12px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left, 0px));
   }
   .screen.active { display: flex; }
 
